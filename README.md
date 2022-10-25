@@ -1,11 +1,5 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
 ## About Laravel Basic Ecommerce Api Service
 
@@ -30,9 +24,9 @@ POST /api/register/
 
 
 POST /api/login/
-	-email:info@enesdemircan.com
-	-password:123456
-	-password_confirmation:123456
+- email:info@enesdemircan.com
+- password:123456
+- password_confirmation:123456
 
 
 # Cart
@@ -40,24 +34,24 @@ POST /api/login/
 GET /api/cart
 
 POST /api/cart
-	-product_id
-	-Piece
+- product_id
+- Piece
 
 # Products
 
 GET  /api/products
 
-GET   /api/products/{product id}
+GET   /api/products/{productid}
 
 POST /api/products/
-	-name
-	-price
-	-discount_rate
-	-category_id
+- name
+- price
+- discount_rate
+- category_id
 
 PUT /api/products/{product id}
 
-DELETE /api/products/{product id}
+DELETE /api/products/{productid}
 
 
 # Favorites
@@ -65,23 +59,23 @@ DELETE /api/products/{product id}
 GET /api/favorites
 
 POST /api/favorites
-	-user_id
-	-product_id
+- user_id
+- product_id
 
-DELETE /api/favorites/{product id}
+DELETE /api/favorites/{productid}
 
 # Categories
 
 GET /api/categories
 
 POST /api/categories
-	-name
-	-title
-	-slug
-	-description
-	-icon
-	-color
-DELETE /api/categories/{category id}
+- name
+- title
+- slug
+- description
+- icon
+- color
+DELETE /api/categories/{categoryid}
 
 # Orders
 
