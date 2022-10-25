@@ -11,8 +11,6 @@
 
 Laravel , Docker ,Laravel Sail ,Mysql , Postman
 
--
-
  - php artisan sail:install
  - Install mysql
  - alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
@@ -22,13 +20,22 @@ Laravel , Docker ,Laravel Sail ,Mysql , Postman
  - sail php artisan passport:install
 
 
+# Login and Register
+
+POST /api/register/
+    -name:enes
+	-email:info@enesdemircan.com
+	-password:123456
+	-password_confirmation:123456
+
+
 POST /api/login/
 	-email:info@enesdemircan.com
 	-password:123456
 	-password_confirmation:123456
 
 
-CART-/
+# Cart
 
 GET /api/cart
 
@@ -36,7 +43,7 @@ POST /api/cart
 	-product_id
 	-Piece
 
-PRODUCTS-/
+# Products
 
 GET  /api/products
 
@@ -53,7 +60,7 @@ PUT /api/products/{product id}
 DELETE /api/products/{product id}
 
 
-FAVORİTES-/
+# Favorites
 
 GET /api/favorites
 
@@ -63,7 +70,7 @@ POST /api/favorites
 
 DELETE /api/favorites/{product id}
 
-CATEGORİES-/
+# Categories
 
 GET /api/categories
 
@@ -76,7 +83,7 @@ POST /api/categories
 	-color
 DELETE /api/categories/{category id}
 
-ORDERS-/
+# Orders
 
 GET /api/orders
 
