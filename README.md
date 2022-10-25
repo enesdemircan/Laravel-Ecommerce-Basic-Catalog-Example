@@ -6,7 +6,6 @@
 Laravel , Docker ,Laravel Sail ,Mysql , Postman
 
  - php artisan sail:install
- - Install mysql
  - alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
  - ./vendor/bin/sail up -d OR sail up -d
  - sail php artisan migrate
